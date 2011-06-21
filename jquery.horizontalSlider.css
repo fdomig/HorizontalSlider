@@ -1,0 +1,40 @@
+/**
+ * CSS for the horizontal slider jQuery plugin
+ * @author Franziskus Domig
+ * @date   2011-06-21
+ */
+.horizontal-slider {
+	overflow: auto;
+	/*white-space: nowrap;*/
+	width: 100%;
+	position: relative;
+}
+
+.horizontal-slider > div, .thumbnails > div {
+	float: left;
+}
+
+.thumbnails {
+	display: inline;
+	position: absolute;
+	left: 30px;
+}
+
+.horizontal-slider .action {
+	cursor: pointer;
+	display: inline;
+	z-index: 100;
+	position: absolute;
+	opacity: 0.7;
+}
+
+.horizontal-slider .back {
+	background: 50% 50% url("horizontalSlider_back.png") no-repeat white;
+	left: 0;
+	padding-right: 30px;
+}
+.horizontal-slider .forward {
+	background: 50% 50% url("horizontalSlider_forward.png") no-repeat white;
+	right: 0;
+	padding-left: 30px;
+}
